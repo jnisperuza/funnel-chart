@@ -151,6 +151,9 @@ The settings argument is an object containing a number of required and optional 
 
   // Number - The line height between each funnel section
   lineHeight: 1
+  
+  // callbak - return object information of section
+  callback: function (object) { return object; }
 }
 ```
 
