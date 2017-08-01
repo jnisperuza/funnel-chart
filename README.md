@@ -1,6 +1,6 @@
 # Funnel Chart
 
-A funnel chart visualization using HTML5 canvas.
+Funnel chart visualization using HTML5 canvas with event click for each section
 
 ## Installation
 
@@ -159,3 +159,4 @@ The settings argument is an object containing a number of required and optional 
   lineHeight: 1
 }
 ```
+
