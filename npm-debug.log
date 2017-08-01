@@ -1,0 +1,136 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   'git://github.com/jnisperuza/funnel-chart.git' ]
+2 info using npm@4.1.1
+3 info using node@v4.5.0
+4 verbose publish [ 'git://github.com/jnisperuza/funnel-chart.git' ]
+5 silly cache add args [ 'git://github.com/jnisperuza/funnel-chart.git', null ]
+6 verbose cache add spec git://github.com/jnisperuza/funnel-chart.git
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: 'git://github.com/jnisperuza/funnel-chart.git',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: 'git://github.com/jnisperuza/funnel-chart.git',
+7 silly cache add   spec: 'git://github.com/jnisperuza/funnel-chart.git',
+7 silly cache add   type: 'hosted',
+7 silly cache add   hosted:
+7 silly cache add    { type: 'github',
+7 silly cache add      ssh: 'git@github.com:jnisperuza/funnel-chart.git',
+7 silly cache add      sshUrl: 'git+ssh://git@github.com/jnisperuza/funnel-chart.git',
+7 silly cache add      httpsUrl: 'git+https://github.com/jnisperuza/funnel-chart.git',
+7 silly cache add      gitUrl: 'git://github.com/jnisperuza/funnel-chart.git',
+7 silly cache add      shortcut: 'github:jnisperuza/funnel-chart',
+7 silly cache add      directUrl: 'https://raw.githubusercontent.com/jnisperuza/funnel-chart/master/package.json' } }
+8 verbose addRemoteGit caching git://github.com/jnisperuza/funnel-chart.git
+9 verbose addRemoteGit git://github.com/jnisperuza/funnel-chart.git is a repository hosted by github
+10 silly tryClone cloning git://github.com/jnisperuza/funnel-chart.git via git://github.com/jnisperuza/funnel-chart.git
+11 verbose tryClone git-github-com-jnisperuza-funnel-chart-git-2aeb2b76 not in flight; caching
+12 verbose correctMkdir /Users/JeisonNisperuza/.npm/_git-remotes correctMkdir not in flight; initializing
+13 info git [ 'config', '--get', 'remote.origin.url' ]
+14 silly validateExistingRemote git://github.com/jnisperuza/funnel-chart.git remote.origin.url: git://github.com/jnisperuza/funnel-chart.git
+15 verbose validateExistingRemote git://github.com/jnisperuza/funnel-chart.git is updating existing cached remote /Users/JeisonNisperuza/.npm/_git-remotes/git-github-com-jnisperuza-funnel-chart-git-2aeb2b76
+16 info git [ 'fetch', '-a', 'origin' ]
+17 verbose updateRemote git fetch -a origin (git://github.com/jnisperuza/funnel-chart.git)
+18 verbose correctMkdir /Users/JeisonNisperuza/.npm/_git-remotes correctMkdir not in flight; initializing
+19 verbose setPermissions git://github.com/jnisperuza/funnel-chart.git set permissions on /Users/JeisonNisperuza/.npm/_git-remotes/git-github-com-jnisperuza-funnel-chart-git-2aeb2b76
+20 verbose resolveHead git://github.com/jnisperuza/funnel-chart.git original treeish: master
+21 info git [ 'rev-list', '-n1', 'master' ]
+22 silly resolveHead git://github.com/jnisperuza/funnel-chart.git resolved treeish: 7f5776b3fc5a9fa9d03824b076ae66efe14e1299
+23 verbose resolveHead git://github.com/jnisperuza/funnel-chart.git resolved Git URL: git://github.com/jnisperuza/funnel-chart.git#7f5776b3fc5a9fa9d03824b076ae66efe14e1299
+24 silly resolveHead Git working directory: /tmp/npm-27857-4ec7bf69/git-cache-687bbb1d/7f5776b3fc5a9fa9d03824b076ae66efe14e1299
+25 info git [ 'clone',
+25 info git   '/Users/JeisonNisperuza/.npm/_git-remotes/git-github-com-jnisperuza-funnel-chart-git-2aeb2b76',
+25 info git   '/tmp/npm-27857-4ec7bf69/git-cache-687bbb1d/7f5776b3fc5a9fa9d03824b076ae66efe14e1299' ]
+26 verbose cloneResolved git://github.com/jnisperuza/funnel-chart.git clone Cloning into '/tmp/npm-27857-4ec7bf69/git-cache-687bbb1d/7f5776b3fc5a9fa9d03824b076ae66efe14e1299'...
+26 verbose cloneResolved done.
+27 info git [ 'checkout', '7f5776b3fc5a9fa9d03824b076ae66efe14e1299' ]
+28 verbose checkoutTreeish git://github.com/jnisperuza/funnel-chart.git checkout Note: checking out '7f5776b3fc5a9fa9d03824b076ae66efe14e1299'.
+28 verbose checkoutTreeish
+28 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+28 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+28 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+28 verbose checkoutTreeish
+28 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+28 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+28 verbose checkoutTreeish
+28 verbose checkoutTreeish   git checkout -b <new-branch-name>
+28 verbose checkoutTreeish
+28 verbose checkoutTreeish HEAD is now at 7f5776b... primer upload
+29 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+30 verbose updateSubmodules git://github.com/jnisperuza/funnel-chart.git submodule update
+31 verbose addLocalDirectory /Users/JeisonNisperuza/.npm/funnel-chart/1.1.1/package.tgz not in flight; packing
+32 verbose correctMkdir /Users/JeisonNisperuza/.npm correctMkdir not in flight; initializing
+33 verbose tar pack [ '/Users/JeisonNisperuza/.npm/funnel-chart/1.1.1/package.tgz',
+33 verbose tar pack   '/tmp/npm-27857-4ec7bf69/git-cache-687bbb1d/7f5776b3fc5a9fa9d03824b076ae66efe14e1299' ]
+34 verbose tarball /Users/JeisonNisperuza/.npm/funnel-chart/1.1.1/package.tgz
+35 verbose folder /tmp/npm-27857-4ec7bf69/git-cache-687bbb1d/7f5776b3fc5a9fa9d03824b076ae66efe14e1299
+36 verbose addLocalTarball adding from inside cache /Users/JeisonNisperuza/.npm/funnel-chart/1.1.1/package.tgz
+37 verbose correctMkdir /Users/JeisonNisperuza/.npm correctMkdir not in flight; initializing
+38 verbose addRemoteGit data._from: git://github.com/jnisperuza/funnel-chart.git
+39 verbose addRemoteGit data._resolved: git://github.com/jnisperuza/funnel-chart.git#7f5776b3fc5a9fa9d03824b076ae66efe14e1299
+40 silly cache afterAdd funnel-chart@1.1.1
+41 verbose afterAdd /Users/JeisonNisperuza/.npm/funnel-chart/1.1.1/package/package.json not in flight; writing
+42 verbose correctMkdir /Users/JeisonNisperuza/.npm correctMkdir not in flight; initializing
+43 verbose afterAdd /Users/JeisonNisperuza/.npm/funnel-chart/1.1.1/package/package.json written
+44 silly publish { name: 'funnel-chart',
+44 silly publish   version: '1.1.1',
+44 silly publish   description: 'Funnel chart visualization using HTML5 canvas',
+44 silly publish   main: 'src/funnel-chart.js',
+44 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+44 silly publish   repository:
+44 silly publish    { type: 'git',
+44 silly publish      url: 'git+https://github.com/jnisperuza/funnel-chart.git' },
+44 silly publish   keywords:
+44 silly publish    [ 'funnel',
+44 silly publish      'funnel chart',
+44 silly publish      'funnel graph',
+44 silly publish      'funnel visualization' ],
+44 silly publish   author: { name: 'Promotably LLC' },
+44 silly publish   license: 'MIT License',
+44 silly publish   bugs: { url: 'https://github.com/jnisperuza/funnel-chart/issues' },
+44 silly publish   homepage: 'https://github.com/jnisperuza/funnel-chart',
+44 silly publish   gitHead: '7f5776b3fc5a9fa9d03824b076ae66efe14e1299',
+44 silly publish   readme: '# Funnel Chart\n\nFunnel chart visualization using HTML5 canvas with event click for each section\n\n## Installation\n\nVia Bower:\n\n```shell\n$ bower install funnel-chart --save\n```\n\nVia npm:\n\n```shell\n$ npm install funnel-chart --save\n```\n\n## Getting Started\n\nFirst we need to include the funnel-chart.js library on the page.\nThe library is available in the global variable `FunnelChart`.\n\n```html\n<script src="/path/to/funnel-chart.js"></script>\n```\n\nThe funnel-chart library also supports AMD and CommonJS loaders.\n\n## Creating a Funnel Chart\n\nThe chart requires an HTML `<canvas>` element to be present on the page with its width and height set via HTML attributes or CSS.\n\n```html\n<canvas id="my-funnel" width="500" height="350"></canvas>\n```\n\nThe chart must then be instantiated in the following manner:\n\n```js\nFunnelChart(canvas, settings);\n```\n\nThe `canvas` argument can be a string representing the element `id`:\n\n```js\nFunnelChart(\'my-funnel\', {\n  values: [1012, 891, 96, 18],\n  labels: [\n    \'Impressions\',\n    \'Clicks\',\n    \'Purchases\',\n    \'Repeat Purchases\'\n  ]\n});\n```\n\nor it can be an HTMLElement reference:\n\n```js\nFunnelChart(document.getElementById(\'my-canvas\'), {\n  ...\n});\n```\n\nor a jQuery selector:\n\n```js\nFunnelChart($(\'canvas\').get(0), {\n  ...\n});\n```\n\nThe chart will be sized to best fit the dimensions of its `<canvas>` element.\n\n## Settings\n\nThe settings argument is an object containing a number of required and optional fields.\n\n```js\n{\n\n  /* Required */\n\n  // Array - Numeric values that will be displayed in each funnel section\n  // in descending order\n  values: [3512, 891, 652, 81],\n\n  /* Optional */\n\n  // Array - These labels should correspond to the array entries in the\n  // values setting. Omit the labels setting if you do not wish to display\n  // labels.\n  labels: [\n    \'Impressions\',\n    \'Clicks\',\n    \'Purchases\',\n    \'Repeat Purchases\'\n  ],\n\n  // Array - String values that correspond\n  values: [3512, 891, 652, 81],\n\n  // Boolean - Whether to display % change between sections\n  displayPercentageChange: true,\n\n  // Number - The number of decimal places that should be displayed for %\n  // change values\n  pPrecision: 1,\n\n  // String - The color of the horizontal label lines (if labels are shown)\n  labelLineColor: \'#eee\',\n\n  // String or Array - The font color(s) of the labels.\n  labelFontColor: \'#657274\',\n\n  // String or Array - The color(s) of the funnel sections.\n  sectionColor: \'#0498b3\',\n\n  // String or Array - The color(s) of the funnel percentage sections.\n  pSectionColor: \'#bfd1d4\',\n\n  // String - The font for labels and values\n  font: \'Helvetica Neue\',\n\n  // Number - The maximum font size in pixels (px) for labels and values.\n  // This will always be used where possible unless the height of the\n  // funnel sections is too small to permit it, in which case the font size\n  // will be automatically reduced to fit\n  maxFontSize: 13,\n\n  // String - The font weight for labels and values.\n  fontWeight: \'bold\',\n\n  // String or Array - The font color(s) for funnel sections\n  sectionFontColor: \'#fff\',\n\n  // String or Array - The font color(s) for % change sections\n  pSectionFontColor: \'#657274\',\n\n  // Number - The height of the % change sections compared to the main\n  // funnel sections. This is a percent value.\n  pSectionHeightPercent: 100,\n\n  // Number - The percentage of the full canvas width that should be\n  // reserved for display of labels (if provided). The funnel will expand\n  // to fit the remainder.\n  labelWidthPercent: 30,\n\n  // Number - The percentage width difference between the top and the\n  // bottom of the funnel.\n  funnelReductionPercent: 40,\n\n  // Number - The space between the right hand edge of the funnel and the\n  // label text in pixels.\n  labelOffset: 10,\n\n  // Number - The line height between each funnel section\n  lineHeight: 1\n}\n```\n\n',
+44 silly publish   readmeFilename: 'README.md',
+44 silly publish   _id: 'funnel-chart@1.1.1',
+44 silly publish   _shasum: 'e2cab584900b0699b0ce19a4a7b85c3dcf2218ff',
+44 silly publish   _from: 'git://github.com/jnisperuza/funnel-chart.git',
+44 silly publish   _resolved: 'git://github.com/jnisperuza/funnel-chart.git#7f5776b3fc5a9fa9d03824b076ae66efe14e1299' }
+45 verbose getPublishConfig undefined
+46 silly mapToRegistry name funnel-chart
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'funnel-chart',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'funnel-chart',
+49 silly mapToRegistry   name: 'funnel-chart',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/funnel-chart
+51 verbose publish registryBase https://registry.npmjs.org/
+52 silly publish uploading /Users/JeisonNisperuza/.npm/funnel-chart/1.1.1/package.tgz
+53 verbose stack Error: auth required for publishing
+53 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+53 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:137:14
+53 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+53 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:108:3)
+53 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:63:9
+53 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:31:16)
+53 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:25:25)
+53 verbose stack     at /usr/local/lib/node_modules/npm/lib/cache.js:363:16
+53 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/write-file-atomic/index.js:50:11
+53 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:7:26)
+54 verbose cwd /Applications/MAMP/htdocs/funnel-chart-master
+55 error Darwin 16.7.0
+56 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "git://github.com/jnisperuza/funnel-chart.git"
+57 error node v4.5.0
+58 error npm  v4.1.1
+59 error code ENEEDAUTH
+60 error need auth auth required for publishing
+61 error need auth You need to authorize this machine using `npm adduser`
+62 verbose exit [ 1, true ]

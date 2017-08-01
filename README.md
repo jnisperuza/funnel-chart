@@ -7,13 +7,7 @@ Funnel chart visualization using HTML5 canvas with event click for each section
 Via Bower:
 
 ```shell
-$ bower install funnel-chart --save
-```
-
-Via npm:
-
-```shell
-$ npm install funnel-chart --save
+$ bower install intelligence-funnel-chart --save
 ```
 
 ## Getting Started
