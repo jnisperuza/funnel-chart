@@ -206,11 +206,12 @@
                 stroke: stroke || "skyblue",
                 strokewidth: strokewidth || 2,
                 isPointInside: function (x, y) {
+                    //                    console.log(this.id + " Si (" + x + " >= " + this.x + " && " + x + " <= " + parseInt(this.x + this.width) + ") &&  (" + y + " <= " + parseInt(this.y + this.height) + ")");
                     return (x >= this.x && x <= this.x + this.width && y >= this.y && y <= this.y + this.height);
                 }
             };
         },
-        
+
         draw: function () {
             var canvas = this.canvas,
                 settings = this.settings;
@@ -255,7 +256,7 @@
 
             for (i = 0; i < settings.values.length; i++) {
                 yPos = this.calculateYPos(i) - 1;
-                
+
                 ctx.fillStyle = this.sequentialValue(settings.labelFontColor, i);
                 ctx.fillText(
                     settings.labels[i] || '',
@@ -303,8 +304,9 @@
 
         drawSections: function (ctx) {
             var rects = [];
-            var offsetX = getOffset(this.canvas).left;
-            var offsetY = getOffset(this.canvas).top;
+            var canvasOffset = typeof jQuery !== "undefined" ? jQuery(this.canvas).offset() : getOffset(this.canvas);
+            var offsetX = canvasOffset.left;
+            var offsetY = canvasOffset.top;
 
             var settings = this.settings,
                 i, yPos;
@@ -347,8 +349,10 @@
             ctx.canvas.addEventListener('click', function (e) {
                 // Put your mousedown stuff here
                 var clicked;
-                var mouseX = parseInt(e.clientX - offsetX);
-                var mouseY = parseInt(e.clientY - offsetY);
+                var mouseX = Math.abs(parseInt(e.clientX - offsetX));
+                var mouseY = Math.abs(parseInt(e.clientY - offsetY));
+
+                console.log(mouseX, mouseY);
 
                 for (var i = 0; i < rects.length; i++) {
 
